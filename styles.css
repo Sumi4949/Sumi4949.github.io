@@ -68,3 +68,39 @@ a:hover{text-decoration:underline}
   .card .gallery{ grid-template-columns:1fr 1fr; }
   .card .gallery img{ height:160px; }
 }
+/* ==== Mobile 読みやすさ調整 ==== */
+@media (max-width: 900px){
+  /* 左右の安全余白を少し広げる（iPhoneのノッチも考慮） */
+  .container{
+    padding-left: max(22px, env(safe-area-inset-left));
+    padding-right: max(22px, env(safe-area-inset-right));
+  }
+
+  /* 文章の行幅を短くして読みやすく（68字前後目安） */
+  .section p,
+  .card p,
+  .card ul,
+  .timeline,
+  .contact{
+    max-width: 68ch;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* 行間と見出しの折り返しを改善 */
+  body{ line-height: 1.85; }
+  .section h2, .card h3{ text-wrap: balance; }
+
+  /* カードの内側も少しゆったり */
+  .card{ padding: 16px; }
+  /* ギャラリー画像はやや低めにして詰まりを軽減（任意） */
+  .card .gallery img{ height: 160px; }
+}
+
+/* さらに小さい端末 */
+@media (max-width: 480px){
+  .container{
+    padding-left: max(24px, env(safe-area-inset-left));
+    padding-right: max(24px, env(safe-area-inset-right));
+  }
+}
