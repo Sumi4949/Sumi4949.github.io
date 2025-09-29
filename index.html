@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>住吉 隼 | Profile</title>
+  <meta name="description" content="慶應義塾大学大学院 理工学研究科（篠沢研究室）にて機械学習×ファイナンスの研究を行う住吉 隼のプロフィールサイト。">
+  <meta name="author" content="住吉 隼">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="styles.css" as="style">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container">
+      <a class="logo" href="#top" aria-label="トップへ">Shun Sumiyoshi</a>
+      <button class="nav-toggle" aria-label="メニューを開く" aria-expanded="false">☰</button>
+      <ul class="nav-list">
+        <li><a href="#about">自己紹介</a></li>
+        <li><a href="#research">研究</a></li>
+        <li><a href="#projects">プロジェクト</a></li>
+        <li><a href="#skills">スキル</a></li>
+        <li><a href="#certs">資格</a></li>
+        <li><a href="#contact">連絡先</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero container">
+      <div class="hero-text">
+        <h1>機械学習 × ファイナンスで、<br class="br-md">意思決定を前に進める</h1>
+        <p class="lead">
+          慶應義塾大学大学院（篠沢研究室）で「株式ヒートマップ画像を用いた投資判断支援」を研究中。
+          複雑な市場データを構造化し、投資家の不確実性を減らすことに情熱を持っています。
+        </p>
+        <div class="hero-ctas">
+          <a class="btn primary" href="#research">研究を見る</a>
+          <a class="btn" href="assets/resume.pdf" download>履歴書（PDF）</a>
+        </div>
+        <p class="meta">最終更新: 2025-09-29</p>
+      </div>
+      <div class="hero-visual" role="img" aria-label="抽象的なヒートマップのビジュアル">
+        <img src="assets/avatar.svg" alt="住吉 隼のシンボル" width="320" height="320">
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <h2>自己紹介</h2>
+      <p>
+        住吉 隼（すみよし しゅん）。データ駆動のアプローチで金融の現場に貢献することを目指しています。
+        テニス歴15年、大学公認テニスサークルの代表を務めるなど、チームで成果を出すことを重視します。
+        2026年春より三井住友信託銀行マーケット事業部でのキャリアを予定しています。
+      </p>
+    </section>
+
+    <section id="research" class="section container">
+      <h2>研究</h2>
+      <article class="card">
+        <h3>株式ヒートマップ画像を用いた投資判断支援</h3>
+        <p>
+          東京証券取引所のヒートマップから特徴量を抽出し、Temporal Fusion Transformerなどの手法で将来のリスク・リターンを推定。
+          予測の根拠をヒートマップ上に可視化し、投資家の意思決定に直結する情報提示を行います。
+        </p>
+        <ul class="badges">
+          <li>Python</li><li>PyTorch</li><li>TFT</li><li>可視化</li><li>解釈可能性</li>
+        </ul>
+      </article>
+      <article class="card">
+        <h3>ポートフォリオ最適化とモンテカルロ検証</h3>
+        <p>
+          M7銘柄を対象に、対数収益率・分散共分散行列の推定から最小分散・シャープ最大化ポートフォリオを構築。
+          NORM.INVと乱数を用いたシナリオ生成で、安定性と下方耐性を検証しました。
+        </p>
+        <ul class="badges">
+          <li>最適化</li><li>シャープレシオ</li><li>リスク管理</li><li>Excel/Python</li>
+        </ul>
+      </article>
+    </section>
+
+    <section id="projects" class="section container">
+      <h2>プロジェクト</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Heatmap Insight</h3>
+          <p>東証ヒートマップから市場状態を要約し、投資判断の根拠を提示するダッシュボード。</p>
+          <p class="meta">役割: 企画 / 実装 / 可視化</p>
+        </article>
+        <article class="card">
+          <h3>Portfolio Lab</h3>
+          <p>リスク–リターンの効率性を比較し、長期の資産推移をシミュレーションする分析ノートブック群。</p>
+          <p class="meta">役割: 数理設計 / 実験</p>
+        </article>
+        <article class="card">
+          <h3>Option MC</h3>
+          <p>ブラック・ショールズ式とモンテカルロの比較。SEと信頼区間まで自動算出。</p>
+          <p class="meta">役割: 数式実装 / ドキュメント</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <h2>スキル</h2>
+      <ul class="chips">
+        <li>Python / PyTorch</li>
+        <li>統計 / 機械学習</li>
+        <li>時系列予測 (TFT)</li>
+        <li>ポートフォリオ理論</li>
+        <li>Excel 高度関数</li>
+        <li>データ可視化</li>
+        <li>英語（学習中）</li>
+      </ul>
+    </section>
+
+    <section id="certs" class="section container">
+      <h2>資格</h2>
+      <ul class="timeline">
+        <li><span class="time">2025</span> MOS Excel 一般/Expert、ITパスポート、日商簿記3級 取得</li>
+        <li><span class="time">2022</span> 基本情報技術者（84%）</li>
+        <li><span class="time">予定</span> 宅建（2025/10/19）、外務員一種（2025/10/31）、簿記2級（〜2026/3）</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>連絡先</h2>
+      <p>お仕事・共同研究のご相談は以下からお願いします。</p>
+      <ul class="contact">
+        <li>メール: <a href="mailto:you@example.com">you@example.com</a></li>
+        <li>X (旧Twitter): <a href="#" rel="me">＠your_handle</a></li>
+        <li>GitHub: <a href="#" rel="me">github.com/yourname</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <small>&copy; 2025 住吉 隼. All rights reserved.</small>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
