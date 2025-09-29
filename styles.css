@@ -52,15 +52,14 @@ a:hover{text-decoration:underline}
   gap:12px; margin-top:14px;
 }
 .card .gallery figure{ margin:0 }
-/* 画像を切り抜かず、縮小してでも全体を表示 */
 .card .gallery img{
   width:100%;
-  height:180px;              /* タイル高さは揃えたい前提なら残す */
-  object-fit: contain;       /* ← cover から contain に変更 */
-  background:#0f1520;        /* レターボックス用の背景（任意） */
+  height:180px;
+  object-fit:cover;          /* ← 画像をタイルに合わせてトリミング */
   border-radius:12px;
   border:1px solid #1a2230;
   display:block;
+  background:transparent;
 }
 .card .gallery figcaption{
   margin-top:6px; color:var(--muted); font-size:.85rem;
